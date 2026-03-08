@@ -1,5 +1,19 @@
 # Agent Manifest Registry
 
+This repository provides the discovery endpoint for the Agent Manifest Public Registry.
+
+Discovery endpoint:
+
+https://raw.githubusercontent.com/hernancapucci/agent-manifest-registry/main/.well-known/agent-manifest-registry.json
+
+The registry dataset is maintained in:
+
+https://github.com/hernancapucci/agent-manifest-dataset
+
+The specification is defined in:
+
+https://github.com/hernancapucci/agent-manifest
+
 The Agent Manifest Registry defines the rules, structure, and governance process for declaring AI agents using the Agent Manifest specification.
 
 This repository serves as the institutional layer of the Agent Manifest ecosystem.
