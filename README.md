@@ -1,73 +1,60 @@
 # Agent Manifest Registry
 
-This repository provides the discovery endpoint for the Agent Manifest Public Registry.
+The Agent Manifest Registry defines the governance model and discovery layer for the Agent Manifest ecosystem.
+
+It specifies how AI agents declare themselves, how manifests are validated, and how declarations are recorded in the public registry.
+
+This repository provides the official discovery endpoint for the public Agent Manifest dataset.
 
 Discovery endpoint:
 
 https://raw.githubusercontent.com/hernancapucci/agent-manifest-registry/main/.well-known/agent-manifest-registry.json
 
-The registry dataset is maintained in:
+---
 
-https://github.com/hernancapucci/agent-manifest-dataset
+# Ecosystem Architecture
 
-The specification is defined in:
+The Agent Manifest ecosystem is composed of four complementary layers.
+
+## 1. Specification
+
+Defines the structure and fields of an Agent Manifest declaration.
+
+Specification repository:
 
 https://github.com/hernancapucci/agent-manifest
 
-The Agent Manifest Registry defines the rules, structure, and governance process for declaring AI agents using the Agent Manifest specification.
-
-This repository serves as the institutional layer of the Agent Manifest ecosystem.
-
-It defines:
-
-• how agents declare themselves  
-• how manifests are structured  
-• how declarations are validated  
-• how manifests are recorded in the public dataset
-
 ---
 
-## Ecosystem Architecture
+## 2. Ambassador (Manifest Generator)
 
-The Agent Manifest ecosystem is composed of four layers.
+A lightweight interface that assists users in generating valid Agent Manifest declarations.
 
-### Specification
+It produces specification-compliant JSON manifests through a guided interface.
 
-The specification defines the structure of an Agent Manifest.
-
-It describes the fields, schema and declaration model.
-
----
-
-### Ambassador (Generator)
-
-The Ambassador is a lightweight interface that helps generate valid manifests.
-
-It guides users through a simple conversational flow and produces a valid JSON declaration.
-
-Live generator:
+Generator:
 
 https://hernancapucci.github.io/agent-manifest-ambassador/
 
 ---
 
-### Diplomat (Registry)
+## 3. Registry (Diplomat)
 
-The Diplomat acts as the registry process responsible for recording manifests into the public dataset.
+The Registry is responsible for validating and recording agent declarations.
 
-It ensures that declarations follow the specification and are stored transparently.
+It defines the rules and governance model that ensure manifests follow the specification and are stored transparently.
 
 ---
 
-### Dataset
+## 4. Public Dataset
 
-All manifests are stored in the public dataset repository.
+All declared manifests are recorded in the public dataset repository.
 
-Dataset location:
+Dataset repository:
 
 https://github.com/hernancapucci/agent-manifest-dataset
 
-Structure:
+Dataset structure:
 
 manifests/YYYY/MM/agent-name.json
 
@@ -77,17 +64,17 @@ manifests/2026/03/the-diplomat.json
 
 ---
 
-## Purpose
+# Purpose
 
-The registry provides:
+The Agent Manifest Registry provides:
 
-• transparency for AI agents  
-• auditable declaration records  
-• a research dataset of agent ecosystems  
+• transparent declaration of AI agents  
+• auditable manifest records  
+• a public dataset for research  
 • a governance layer for agent identity
 
 ---
 
-## License
+# License
 
 MIT License
