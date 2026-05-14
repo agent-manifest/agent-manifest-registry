@@ -34,7 +34,7 @@ It produces specification-compliant JSON manifests through a guided interface.
 
 Generator:
 
-https://hernancapucci.github.io/agent-manifest-ambassador/
+https://agent-manifest.github.io/agent-manifest-ambassador/
 
 ---
 
