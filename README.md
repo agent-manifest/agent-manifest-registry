@@ -8,7 +8,7 @@ This repository provides the official discovery endpoint for the public Agent Ma
 
 Discovery endpoint:
 
-https://raw.githubusercontent.com/hernancapucci/agent-manifest-registry/main/.well-known/agent-manifest-registry.json
+https://raw.githubusercontent.com/agent-manifest/agent-manifest-registry/main/.well-known/agent-manifest-registry.json
 
 ---
 
@@ -22,7 +22,7 @@ Defines the structure and fields of an Agent Manifest declaration.
 
 Specification repository:
 
-https://github.com/hernancapucci/agent-manifest
+https://github.com/agent-manifest/agent-manifest
 
 ---
 
@@ -52,7 +52,7 @@ All declared manifests are recorded in the public dataset repository.
 
 Dataset repository:
 
-https://github.com/hernancapucci/agent-manifest-dataset
+https://github.com/agent-manifest/agent-manifest-dataset
 
 Dataset structure:
 
