@@ -45,7 +45,7 @@ Registered manifests are stored in the public dataset repository.
 
 Repository:
 
-https://github.com/hernancapucci/agent-manifest-dataset
+https://github.com/agent-manifest/agent-manifest-dataset
 
 Structure:
 
