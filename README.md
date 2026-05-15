@@ -8,7 +8,7 @@ This repository provides the official discovery endpoint for the public Agent Ma
 
 Discovery endpoint:
 
-https://raw.githubusercontent.com/agent-manifest/agent-manifest-registry/main/.well-known/agent-manifest-registry.json
+https://agent-manifest-spec.org/.well-known/agent-manifest-registry.json
 
 ---
 
