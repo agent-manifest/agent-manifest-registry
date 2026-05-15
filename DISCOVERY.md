@@ -78,11 +78,13 @@ Future validator layers may also perform semantic and trust checks.
 
 Once discovered and validated, the registry may index:
 
-- identity
-- declaration_date
-- manifest_path
-- manifest_url
+- `agent_id`
+- `registered_at`
+- `manifest_path`
+- `manifest_url`
 - source domain or repository
+
+Registry output fields are index metadata maintained by the registry, distinct from the manifest fields defined by the Agent Manifest specification.
 
 This allows machine-readable discovery without requiring central ownership of every manifest.
 
