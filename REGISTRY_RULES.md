@@ -12,7 +12,7 @@ An agent must declare a valid Agent Manifest before participating in interaction
 
 The manifest must conform to the official schema:
 
-https://agent-manifest-spec.org/schema/v1/manifest.schema.json
+https://agent-manifest-spec.org/spec/v1.0/schema.json
 
 ---
 
@@ -20,12 +20,20 @@ https://agent-manifest-spec.org/schema/v1/manifest.schema.json
 
 A valid Agent Manifest must include the following fields:
 
-- identity
-- purpose
-- capabilities
-- boundaries
-- autonomy_level
-- declaration_date
+- `manifest_version`
+- `agent_id`
+- `agent_name`
+- `owner`
+- `purpose`
+- `forbidden_actions`
+- `autonomy`
+- `risk_profile`
+- `data_handling`
+- `stopping_authority`
+- `audit_surface`
+- `contact`
+
+Full structural definition: https://agent-manifest-spec.org/spec/v1.0/spec.md
 
 ---
 
@@ -75,7 +83,7 @@ The registry will maintain compatibility through versioned schema definitions.
 
 ## 7. Role of the Diplomat
 
-The Diplomat acts as the registry process responsible for recording declarations in the dataset.
+The Diplomat acts as the registration gateway responsible for recording declarations in the dataset.
 
 It verifies that submitted manifests conform to the specification before registration.
 
