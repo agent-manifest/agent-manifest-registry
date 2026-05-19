@@ -1,18 +1,26 @@
+![Status](https://img.shields.io/badge/status-published-1a1917?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.0-1a1917?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
+
 # Agent Manifest Registry
 
-The Agent Manifest Registry defines the governance model and discovery layer for the Agent Manifest ecosystem.
+Discovery and registry governance layer for Agent Manifest declarations.
 
-It specifies how AI agents declare themselves, how manifests are validated, and how declarations are recorded in the public registry.
+The Agent Manifest Registry defines the governance model and discovery layer for the Agent Manifest ecosystem. It specifies how AI agents declare themselves, how manifests are validated, and how declarations are recorded in the public registry.
 
-This repository provides the official discovery endpoint for the public Agent Manifest dataset.
-
-Discovery endpoint:
+This repository documents registry behavior and governance. The canonical runtime discovery endpoint is:
 
 https://agent-manifest-spec.org/.well-known/agent-manifest-registry.json
 
+**Canonical links**
+
+- **Specification** — https://agent-manifest-spec.org
+- **Schema** — https://agent-manifest-spec.org/spec/v1.0/schema.json
+- **Discovery** — https://agent-manifest-spec.org/.well-known/agent-manifest-registry.json
+
 ---
 
-# Ecosystem Architecture
+## Ecosystem Architecture
 
 The Agent Manifest ecosystem is composed of four complementary layers.
 
@@ -64,7 +72,7 @@ manifests/2026/03/the-diplomat.json
 
 ---
 
-# Purpose
+## Purpose
 
 The Agent Manifest Registry provides:
 
@@ -75,6 +83,20 @@ The Agent Manifest Registry provides:
 
 ---
 
-# License
+## License
 
-MIT License
+MIT License. See [`LICENSE`](./LICENSE).
+
+---
+
+**Part of the [Agent Manifest](https://agent-manifest-spec.org) ecosystem**
+
+[Spec](https://github.com/agent-manifest/agent-manifest) ·
+[Registry](https://github.com/agent-manifest/agent-manifest-registry) ·
+[Dataset](https://github.com/agent-manifest/agent-manifest-dataset) ·
+[Ambassador](https://github.com/agent-manifest/agent-manifest-ambassador) ·
+[Diplomat](https://github.com/agent-manifest/agent-manifest-diplomat) ·
+[Boundary Handshake](https://github.com/agent-manifest/boundary-handshake) ·
+[∈ Principle](https://github.com/agent-manifest/e-principle)
+
+MIT
