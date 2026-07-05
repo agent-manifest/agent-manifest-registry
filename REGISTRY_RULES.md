@@ -23,6 +23,7 @@ A valid Agent Manifest must include the following fields:
 - `manifest_version`
 - `agent_id`
 - `agent_name`
+- `agent_version`
 - `owner`
 - `purpose`
 - `forbidden_actions`
