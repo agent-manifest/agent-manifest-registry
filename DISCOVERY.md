@@ -135,7 +135,7 @@ The discovery architecture of Agent Manifest consists of:
    the public archive of indexed declarations
 
 5. validator  
-   the system that checks compliance and trust properties
+   the system that checks structural conformance of declarations
 
 ---
 

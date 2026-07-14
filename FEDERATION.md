@@ -153,7 +153,7 @@ The federated Agent Manifest model is composed of five layers:
    indexes and exposes discoverable manifests
 
 5. Validator  
-   verifies trust, structure, and compliance
+   verifies declarative structure and internal coherence
 
 ---
 
