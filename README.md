@@ -6,7 +6,7 @@
 
 Discovery and registry governance layer for Agent Manifest declarations.
 
-The Agent Manifest Registry defines the governance model and discovery layer for the Agent Manifest ecosystem. It specifies how AI agents declare themselves, how manifests are validated, and how declarations are recorded in the public registry.
+The Agent Manifest Registry defines the governance model and discovery layer for the Agent Manifest ecosystem. It documents how AI agents declare themselves, how manifests are validated by the registration pipeline (the Diplomat API and the dataset workflow), and how declarations are recorded in the public registry.
 
 This repository documents registry behavior and governance. The canonical runtime discovery endpoint is:
 
@@ -48,9 +48,9 @@ https://agent-manifest.github.io/agent-manifest-ambassador/
 
 ## 3. Registry (Diplomat)
 
-The Registry is responsible for validating and recording agent declarations.
+Validation is performed by the Diplomat, which checks each declaration against the canonical v1.0 JSON Schema before it is recorded. The registry index mirrors what has been recorded.
 
-It defines the rules and governance model that ensure manifests follow the specification and are stored transparently.
+This repository defines the rules and governance model under which that process stays public, reproducible, and auditable.
 
 ---
 

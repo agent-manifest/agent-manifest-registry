@@ -173,14 +173,12 @@ This approach makes Agent Manifest suitable for open ecosystems of AI agents.
 
 ## 11. Future Work
 
-Future federation work may include:
+Future federation work may include (possible future research, non-normative):
 
 - canonical rules for manifest discovery
-- domain-based trust models
 - signed manifests
-- validator trust scores
 - registry federation between multiple hubs
-- compatibility with boundary handshake protocols
+- compatibility with the Boundary Handshake conceptual framework
 
 ---
 
