@@ -2,7 +2,7 @@
 
 This document defines the rules governing the registration of Agent Manifests within the Agent Manifest ecosystem.
 
-The registry process ensures transparency, reproducibility, and a consistent declaration format for AI agents.
+The registry process is public, reproducible, and auditable, and uses a consistent declaration format for AI agents.
 
 ---
 

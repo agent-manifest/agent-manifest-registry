@@ -70,7 +70,7 @@ Before a manifest is added to the registry, the system should verify:
 - required Agent Manifest fields are present
 - the declaration is structurally valid
 
-Future validator layers may also perform semantic and trust checks.
+Semantic checks are a possible future research direction (non-normative).
 
 ---
 
@@ -135,20 +135,18 @@ The discovery architecture of Agent Manifest consists of:
    the public archive of indexed declarations
 
 5. validator  
-   the system that checks compliance and trust properties
+   the system that checks structural conformance of declarations
 
 ---
 
 ## 10. Future Work
 
-Future discovery work may include:
+Future discovery work may include (possible future research, non-normative):
 
 - automatic domain scanning
 - repository discovery rules
 - signed manifest verification
-- trust metadata
 - multi-registry federation
-- compatibility with validator trust scores
 
 ---
 
