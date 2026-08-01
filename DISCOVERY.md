@@ -105,7 +105,55 @@ This allows the registry to remain lightweight while preserving transparency.
 
 ---
 
-## 8. Non-Goals
+## 8. Registry Discovery Document
+
+The registry publishes a discovery document at:
+
+`/.well-known/agent-manifest-registry.json`
+
+on the canonical host, `agent-manifest-spec.org`. It points at the public
+registry index and at the repositories behind it.
+
+### Field names and their stability
+
+The canonical key for the location of the registry index is `registry_url`.
+
+The document declares its own `registry_version`. **The names of its fields are
+stable for as long as that number is unchanged.** Renaming, removing, or
+repurposing a field requires incrementing it. A tool may therefore read this
+document by field name, provided it reads `registry_version` as well and treats
+an unrecognised value as a document it does not know how to parse.
+
+### What this contract is not
+
+This is an operational contract of the registry. **It is not part of the
+normative specification.** The normative contract is defined by
+`spec/v1.0/spec.md` and `spec/v1.0/schema.json`, as stated in `STABILITY.md`, and
+nothing in this section extends it. A change to the fields described here is not
+a change to the Agent Manifest specification and does not affect
+`manifest_version`.
+
+### Two different version numbers
+
+`registry_version` appears in two distinct documents, and they are independent:
+
+| Where | What it versions |
+| --- | --- |
+| `/.well-known/agent-manifest-registry.json` | the field names of the discovery document described in this section |
+| `registry.json`, in the public dataset | the structure of the registry index itself |
+
+They are separate contracts that happen to share a field name. Neither number
+governs the other, and neither governs `manifest_version`.
+
+### The copy in this repository
+
+This repository carries a copy of the discovery document for reference. **The
+document served on the canonical host is the one that counts.** Where the two
+differ, the served document is correct and the copy here is stale.
+
+---
+
+## 9. Non-Goals
 
 The discovery layer does not guarantee:
 
@@ -118,7 +166,7 @@ Those concerns belong to validators, governance processes, or external trust sys
 
 ---
 
-## 9. Discovery Architecture
+## 10. Discovery Architecture
 
 The discovery architecture of Agent Manifest consists of:
 
@@ -139,7 +187,7 @@ The discovery architecture of Agent Manifest consists of:
 
 ---
 
-## 10. Future Work
+## 11. Future Work
 
 Future discovery work may include (possible future research, non-normative):
 
@@ -150,7 +198,7 @@ Future discovery work may include (possible future research, non-normative):
 
 ---
 
-## 11. Status
+## 12. Status
 
 This document defines the conceptual discovery model for the Agent Manifest ecosystem.
 

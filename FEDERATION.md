@@ -76,13 +76,20 @@ The canonical discovery endpoint for the public Agent Manifest Registry is:
 
 `/.well-known/agent-manifest-registry.json`
 
-This endpoint provides discovery metadata for the registry itself, including:
+This endpoint provides discovery metadata for the registry itself. The
+document carries eight fields, named here exactly as they appear in it:
 
-- registry type
-- registry version
-- source repository
-- dataset endpoint
-- specification repository
+- `registry_type`
+- `registry_version`
+- `registry_name`
+- `registry_url` — the location of the public registry index
+- `dataset_repository`
+- `specification_repository`
+- `registry_repository`
+- `description`
+
+`DISCOVERY.md` section 8 states the contract these names carry, and the
+canonical host serves the document that counts.
 
 ---
 
