@@ -50,13 +50,13 @@ https://agent-manifest.github.io/agent-manifest-ambassador/
 
 Validation is performed by the Diplomat, which checks each declaration against the canonical v1.0 JSON Schema before it is recorded. The registry index mirrors what has been recorded.
 
-This repository defines the rules and governance model under which that process stays public, reproducible, and auditable.
+Registration records a declaration; it does not verify the identity of the submitter, ownership of an `agent_id`, the truth of the declared owner, or correspondence between a declaration and runtime behavior. This repository defines the rules and governance model under which the recording process stays public, reproducible, and auditable.
 
 ---
 
 ## 4. Public Dataset
 
-All declared manifests are recorded in the public dataset repository.
+Accepted manifests are recorded in the public dataset repository. "Accepted" means that the submitted document passed the registration pipeline's structural checks and uniqueness rule; it does not mean that an identity, owner, or runtime claim was verified.
 
 Dataset repository:
 
@@ -72,14 +72,20 @@ manifests/2026/03/the-diplomat.json
 
 ---
 
+## Registration trust boundary
+
+The current registration path is intentionally unauthenticated. It validates document structure and rejects duplicate `agent_id` values, but it does not establish provenance or ownership.
+
+Because the dataset is append-only and duplicate identifiers are rejected, the first accepted declaration for an `agent_id` occupies that identifier in the public dataset. The current pipeline cannot determine whether that first submitter was authorized to claim the name. Consumers must therefore treat registration as evidence that a declaration was recorded, not as proof of identity, ownership, endorsement, certification, or truthfulness.
+
 ## Purpose
 
 The Agent Manifest Registry provides:
 
-• transparent declaration of AI agents  
+• transparent recording of Agent Manifest declarations  
 • auditable manifest records  
 • a public dataset for research  
-• a governance layer for agent identity
+• a governance layer for declaration discovery and registration
 
 ---
 
